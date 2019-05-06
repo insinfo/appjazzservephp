@@ -1,0 +1,237 @@
+/*
+Theme Name: Portal Prefeitura de Rio das Ostras
+Theme URI: http://www.riodasostras.rj.gov.br;
+Author: COTINF/ASCOM - Prefeitura de Rio das Ostras
+Author URI: http://www.riodasostras.rj.gov.br;
+Description: Novo portal da Prefeitura de Rio das Ostras.
+Version: 2.1
+Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: portal
+*/
+
+@import url("modulos.css");
+@import url("estilos.css");
+@import url("complementos.css");
+@import url("contraste.css");
+
+/* Custom Plugin Slideshow */
+.slideshow_slide_image{
+    border-radius: 6px;
+}
+/* /Custom Plugin Slideshow */
+
+/* Custom Image Post */
+#noticias-content figure, #noticias-content img{
+    display: none;
+}
+/* /Custom Image Post */
+
+/* Custom Titulo Destaque 3 na Página Inicial *
+
+.titleNowrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* /Custom Titulo Destaque 3 na Página Inicial */
+
+/* Corrigir class do botão Enviar do Fale Conosco */
+.btnEnviar input{
+    background-color: #4a90e2;
+    border: solid 1px #4a90e2;
+    text-transform: uppercase;
+    color: #ffffff;
+    height: 39px;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    font-size: 0.85714286em;
+    font-weight: 700;
+    padding: 0 5px;
+}
+/* /Corrigir class do botão Enviar do Fale Conosco */
+
+/* Custom Comentarios */
+.comments #comments, .comments #reply-title {
+    color: #033649;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    line-height: 1.2em;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.comments .commentlist li {
+    border-radius: 6px !important;
+}
+
+.comments .comment-form-url {
+    display: none;
+}
+
+.comments .form-submit {
+    width: 25% !important;
+}
+
+.comments .submit {
+    font-size: 0.95714286em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
+    color: #ffffff !important;
+    background-color: #4a90e2 !important;
+    border-color: #4a90e2 !important;
+    position: relative;
+    min-width: 200px;
+}
+
+.comments .commentlist .comment-author {
+    margin-left: 180px;
+}
+
+.comments .commentlist .avatar {
+    position: relative;
+    left: -150px;
+    max-height: 6em;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.comments .commentlist .fn {
+    color: #033649;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    left: -82px;
+    top: -20px;
+    position: relative;
+}
+
+.comments .commentlist .says {
+    left: -82px;
+    top: -20px;
+    position: relative;
+}
+
+.comments .comment-metadata {
+    top: -20px;
+    margin-left: 180px;
+    font-size: 0.85714286em;
+    position: relative;
+}
+
+.comments .commentlist .comment-content, .comments .commentlist .comment-awaiting-moderation {
+    margin-left: 180px;
+    top: -20px;
+    position: relative;
+}
+
+.comments .reply {
+    top: -20px;
+    margin-left: 180px;
+    font-size: 0.85714286em;
+    position: relative;
+}
+
+.comments .commentlist .comment-meta {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.comments .commentlist li:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.comments .commentlist .comment {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.comments .commentlist article {
+    padding-left: 20px;
+}
+
+.comments .commentlist li ul {
+    margin-left: 159px;
+}
+
+.comments .comments__list li:last-child {
+    background-color: #ffffff;
+}
+
+.comments .comments__list li {
+
+}
+
+/* /Custom Comentarios */
+
+/* Ocultar link do vídeo da WebTV na Homepage */
+#video-content a {
+    display: none;
+}
+/* /Ocultar link do vídeo da WebTV na Homepage */
+
+
+/* Paginação da Busca */
+.pagination h2 {
+    display: none;
+}
+
+.pagination .page-numbers {
+    text-align: center;
+}
+
+.pagination .page-numbers li {
+    display: inline;
+}
+
+.pagination .page-numbers li a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #033649;
+    padding: 0 10px;
+    margin: 0 5px;
+    border-radius: 6px;
+}
+
+.pagination .page-numbers li .current {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #4a90e2;
+    padding: 0 10px;
+    margin: 0 5px;
+    border-radius: 6px;
+}
+/* /Paginação da Busca */
+
+/* Formulário Pesquisa UAB */
+.screen-reader-response {
+    display: none;
+}
+
+.pesquisaInputCheckbox span span {
+    display: block;
+}
+
+.pesquisaInputCheckbox span span span label {
+    margin-top: 12px;
+}
+
+.pesquisaInputCheckbox span span span label input {
+    width: 26px;
+    display: block;
+}
+
+/* /Formulário Pesquisa UAB */

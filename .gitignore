@@ -1,0 +1,15 @@
+.idea/
+.idea
+.env
+Vendor/
+vendor/
+cdn/
+ciente/
+FrontEnd/cdn
+FrontEnd/ciente
+FrontEnd/storage
+FrontEnd/pmroPadrao
+FrontEnd/portalrh
+composer.lock
+*.vs
+*.phpproj

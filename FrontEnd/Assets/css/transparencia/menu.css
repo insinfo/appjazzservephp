@@ -1,0 +1,146 @@
+
+main {
+     position: relative;
+     z-index: 2;
+     height: 100vh;
+     overflow-y: auto;
+     -webkit-overflow-scrolling: touch;
+     padding: 200px 5%;
+     background-color: #9cb3a8;
+     -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+     -ms-transform: translateZ(0);
+     -o-transform: translateZ(0);
+     transform: translateZ(0);
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     -webkit-transition: -webkit-transform 0.7s;
+     -moz-transition: -moz-transform 0.7s;
+     transition: transform 0.7s;
+     -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+     -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+     transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+}
+ .navigation-is-open main {
+     -webkit-transform: translateX(100%);
+     -moz-transform: translateX(100%);
+     -ms-transform: translateX(100%);
+     -o-transform: translateX(100%);
+     transform: translateX(100%);
+}
+ @media only screen and (min-width: 768px) {
+     main {
+         padding: 250px 10%;
+    }
+}
+ .navigation-is-open .cd-nav-trigger circle {
+     stroke-dashoffset: 0;
+     -webkit-transition: stroke-dashoffset 0.4s 0.3s;
+     -moz-transition: stroke-dashoffset 0.4s 0.3s;
+     transition: stroke-dashoffset 0.4s 0.3s;
+}
+ .cd-nav {
+     position: fixed;
+     z-index: 20;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background-color: #243040;
+     visibility: hidden;
+     -webkit-transition: visibility 0s 0.7s;
+     -moz-transition: visibility 0s 0.7s;
+     transition: visibility 0s 0.7s;
+}
+ .cd-nav .cd-navigation-wrapper {
+     height: 100%;
+     overflow-y: auto;
+     -webkit-overflow-scrolling: touch;
+     padding: 40px 5%;
+     -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+     -ms-transform: translateZ(0);
+     -o-transform: translateZ(0);
+     transform: translateZ(0);
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
+     transform: translateX(-50%);
+     -webkit-transition: -webkit-transform 0.7s;
+     -moz-transition: -moz-transform 0.7s;
+     transition: transform 0.7s;
+     -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+     -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+     transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+}
+ .navigation-is-open .cd-nav {
+     visibility: visible;
+     -webkit-transition: visibility 0s 0s;
+     -moz-transition: visibility 0s 0s;
+     transition: visibility 0s 0s;
+}
+ .navigation-is-open .cd-nav .cd-navigation-wrapper {
+     -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+     -ms-transform: translateX(0);
+     -o-transform: translateX(0);
+     transform: translateX(0);
+     -webkit-transition: -webkit-transform 0.5s;
+     -moz-transition: -moz-transform 0.5s;
+     transition: transform 0.5s;
+     -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+     -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+     transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+}
+ .cd-nav .cd-primary-nav {
+     margin-top: 30px;
+}
+ .cd-nav .cd-primary-nav li {
+     margin: 0;
+     display: block;
+}
+ .cd-nav .cd-primary-nav a {
+     font-size: 1rem;
+     color: #eeeeee;
+     display: block;
+}
+ .no-touch .cd-nav .cd-primary-nav a:hover {
+     color: #4A90E2;
+}
+ @media only screen and (min-width: 1170px) {
+     .cd-nav .cd-half-block {
+         width: 50%;
+         float: left;
+    }
+     .cd-nav .cd-primary-nav {
+         margin-top: 0;
+    }
+     .cd-nav .cd-primary-nav li {
+         margin: 0;
+    }
+     .cd-nav .cd-primary-nav a {
+         font-size: 1rem;
+    }
+}
+ .no-js main {
+     height: auto;
+     overflow: visible;
+}
+ .no-js .cd-nav {
+     position: static;
+     visibility: visible;
+}
+ .no-js .cd-nav .cd-navigation-wrapper {
+     height: auto;
+     overflow: visible;
+     padding: 100px 5%;
+     -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+     -ms-transform: translateX(0);
+     -o-transform: translateX(0);
+     transform: translateX(0);
+}
+ 

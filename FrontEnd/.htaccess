@@ -1,0 +1,17 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L] #WordPress style
+# Habilita passagem de parametro de autorização no header http (Appache)
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+#desabilita cache
+Header unset ETag
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+
+#Header add Access-Control-Allow-Credentials "true"
+#Header add Access-Control-Allow-Origin "http://192.168.133.12"
+#Header add Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+#Header add Access-Control-Allow-Methods "GET,PUT,POST,DELETE,PATCH,OPTIONS"
